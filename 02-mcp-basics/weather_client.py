@@ -19,6 +19,11 @@ import sys
 from mcp import ClientSession, StdioServerParameters
 from mcp.client.stdio import stdio_client
 
+# Windows terminals can default to a legacy code page that cannot print the
+# Vietnamese descriptions used by this demo.
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8")
+
 
 async def main() -> None:
     # Dùng đúng interpreter đang chạy client (tránh lỗi "python" không tồn tại)

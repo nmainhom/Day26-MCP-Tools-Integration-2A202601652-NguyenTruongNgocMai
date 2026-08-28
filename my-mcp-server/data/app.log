@@ -1,0 +1,16 @@
+2026-08-28T08:00:01+07:00 INFO api - Application started on port 9000
+2026-08-28T08:01:14+07:00 INFO auth - User user-1042 logged in successfully
+2026-08-28T08:02:03+07:00 DEBUG cache - Cache hit for product catalog
+2026-08-28T08:03:27+07:00 WARNING payments - Payment provider response took 1820ms
+2026-08-28T08:04:09+07:00 ERROR orders - Failed to create order ORD-1008: database timeout
+2026-08-28T08:04:31+07:00 INFO orders - Retrying order ORD-1008
+2026-08-28T08:04:35+07:00 INFO orders - Order ORD-1008 created after retry
+2026-08-28T08:07:12+07:00 ERROR auth - Invalid token for user user-2031
+2026-08-28T08:09:44+07:00 INFO api - GET /products completed with status 200
+2026-08-28T08:11:18+07:00 WARNING inventory - Product SKU-778 has low stock: 3 remaining
+2026-08-28T08:13:50+07:00 ERROR payments - Charge PAY-4481 failed: provider unavailable
+2026-08-28T08:14:07+07:00 INFO payments - Charge PAY-4481 queued for retry
+2026-08-28T08:18:26+07:00 CRITICAL database - Primary database connection pool exhausted
+2026-08-28T08:18:31+07:00 ERROR api - POST /orders returned status 503
+2026-08-28T08:20:02+07:00 INFO database - Connection pool recovered
+2026-08-28T08:22:16+07:00 INFO health - All services healthy

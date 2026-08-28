@@ -7,6 +7,10 @@ import sys
 from mcp import ClientSession, StdioServerParameters
 from mcp.client.stdio import stdio_client
 
+# Ensure Windows terminals display the Vietnamese demo output correctly.
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8")
+
 
 async def main() -> None:
     params = StdioServerParameters(command=sys.executable, args=["versioned_server.py"])
